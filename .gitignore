@@ -1,0 +1,11 @@
+/.vs
+/Common/bin
+/Common/obj
+/Common/Common.csproj.user
+/packages
+/WebApiDemo/bin
+/WebApiDemo/obj
+/WebApiDemo/WebApiDemo.csproj.user
+/WebApiDemo.Tool/WebApiDemo.Tool.csproj.user
+/WebApiDemo.Tool/bin
+/WebApiDemo.Tool/obj
