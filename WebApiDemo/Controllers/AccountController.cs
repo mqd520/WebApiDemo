@@ -17,7 +17,7 @@ namespace WebApiDemo.Controllers
     public class AccountController : ApiController
     {
         [HttpPost]
-        public LoginResultModel Login([FromBody] LoginInfoModel model)
+        public CommonResultModel Login([FromBody] LoginInfoModel model)
         {
             var result = new LoginResultModel
             {
@@ -30,18 +30,21 @@ namespace WebApiDemo.Controllers
                 })
             };
 
-            return result;
+            return CommonResultModelTool.Create(result);
         }
 
         [HttpGet]
         public CommonResultModel Logout()
         {
-            return new Models.CommonResultModel
+            var result = new CommonResultModel
             {
                 Code = 0
             };
+
+            return CommonResultModelTool.Create(result);
         }
 
+        [NonAction]
         protected override void Dispose(bool disposing)
         {
             // ...

@@ -9,8 +9,8 @@ using System.Web.Routing;
 
 using Common;
 
+using WebApiDemo.Def;
 using WebApiDemo.Common;
-using WebApiDemo.Models;
 
 namespace WebApiDemo
 {
@@ -37,7 +37,8 @@ namespace WebApiDemo
 
 #if !DEBUG
             Server.ClearError();
-            http.Response.StatusCode = 500;
+            http.Response.StatusCode = 200;
+            CommonResultModelTool.Write2Response(http.Response, null, ECommonResultCode.Failure);
 #endif
         }
     }

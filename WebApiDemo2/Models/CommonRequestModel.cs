@@ -6,12 +6,10 @@ using System.Web;
 namespace WebApiDemo.Models
 {
     /// <summary>
-    /// Common Result Model
+    /// Common Request Model
     /// </summary>
-    public class CommonResultModel
+    public class CommonRequestModel
     {
-        public int Code { get; set; }
 
-        public string Data { get; set; }
     }
 }

@@ -7,7 +7,10 @@ using System.Web.Http;
 using System.Web.Mvc;
 using System.Text;
 
+using Common;
+
 using WebApiDemo.Config;
+using WebApiDemo.Common;
 
 namespace WebApiDemo.Controllers
 {

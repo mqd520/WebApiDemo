@@ -5,6 +5,19 @@ using System.Web;
 
 namespace WebApiDemo.Def
 {
+    #region Common
+    /// <summary>
+    /// Common Result Code
+    /// </summary>
+    public enum ECommonResultCode
+    {
+        Success = 0,
+
+        Failure = 100
+    }
+    #endregion
+
+
     /// <summary>
     /// Login Result Code
     /// </summary>
